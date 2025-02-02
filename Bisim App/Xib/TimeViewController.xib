@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeViewController" customModule="Bisim_App" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="Lqn-Lo-EZK" id="Xnk-XC-ftn"/>
+                <outlet property="pickerView" destination="9dS-SC-sMS" id="a21-j0-RQ0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-Lo-EZK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-AA-8wl" customClass="RoundedView" customModule="Bisim_App" customModuleProvider="target">
+                    <rect key="frame" x="40" y="164" width="240" height="240"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dS-SC-sMS">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="195"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM0-DI-IDQ" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="195" width="240" height="45"/>
+                            <color key="backgroundColor" red="0.2763027549" green="0.57139277460000004" blue="0.89022940399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Abf-gh-dfD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <state key="normal" title="انتخاب">
+                                <color key="titleColor" red="0.93773674959999997" green="0.92865139249999995" blue="0.99215823410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="agreeButtonPressed:" destination="-1" eventType="touchUpInside" id="zmC-Sr-iKi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="48n-82-1sW"/>
+                        <constraint firstAttribute="trailing" secondItem="9dS-SC-sMS" secondAttribute="trailing" id="52P-sE-Fo0"/>
+                        <constraint firstItem="9dS-SC-sMS" firstAttribute="leading" secondItem="vF5-AA-8wl" secondAttribute="leading" id="Gad-HT-Axt"/>
+                        <constraint firstItem="oM0-DI-IDQ" firstAttribute="top" secondItem="9dS-SC-sMS" secondAttribute="bottom" id="PiL-ER-6Kv"/>
+                        <constraint firstItem="oM0-DI-IDQ" firstAttribute="leading" secondItem="vF5-AA-8wl" secondAttribute="leading" id="Qj4-so-Vag"/>
+                        <constraint firstAttribute="height" constant="240" id="exZ-Np-PJi"/>
+                        <constraint firstAttribute="bottom" secondItem="oM0-DI-IDQ" secondAttribute="bottom" id="qr2-cY-fx1"/>
+                        <constraint firstAttribute="trailing" secondItem="oM0-DI-IDQ" secondAttribute="trailing" id="yUu-EO-vip"/>
+                        <constraint firstItem="9dS-SC-sMS" firstAttribute="top" secondItem="vF5-AA-8wl" secondAttribute="top" id="zYu-BO-BTJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Lqn-Lo-EZK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7fk-7V-hYc"/>
+                <constraint firstItem="Lqn-Lo-EZK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FGX-Or-dTr"/>
+                <constraint firstItem="vF5-AA-8wl" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NG2-hX-r8M"/>
+                <constraint firstItem="Lqn-Lo-EZK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OJN-lC-0sq"/>
+                <constraint firstItem="vF5-AA-8wl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSY-0S-sT1"/>
+                <constraint firstAttribute="bottom" secondItem="Lqn-Lo-EZK" secondAttribute="bottom" id="vbr-Kw-GyW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52.5" y="48.591549295774648"/>
+        </view>
+    </objects>
+</document>

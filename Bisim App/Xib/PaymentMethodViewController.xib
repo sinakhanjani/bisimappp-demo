@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+        <array key="isanslight.ttf">
+            <string>IRANSansMobileFaNum-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethodViewController" customModule="Bisim_App" customModuleProvider="target">
+            <connections>
+                <outlet property="behindView" destination="Zke-0D-B5B" id="qXy-iM-s1Z"/>
+                <outlet property="descriptionLabel" destination="EGx-Gj-daU" id="WuU-IV-YWX"/>
+                <outlet property="imageView" destination="Bn0-55-W67" id="xV2-Td-cPD"/>
+                <outlet property="methodTypeLabel" destination="qvg-Se-5Oo" id="P1B-QD-Cxk"/>
+                <outlet property="priceLabel" destination="Fvo-YY-A7R" id="96R-g4-K4X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCv-rV-QRs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkV-FL-ILR" customClass="RoundedView" customModule="Bisim_App" customModuleProvider="target">
+                    <rect key="frame" x="16" y="94" width="288" height="380"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfi-Q6-JbS" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="340" width="288" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="zLO-IV-NVu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                            <state key="normal" title="بستن">
+                                <color key="titleColor" red="0.64625161919999996" green="0.18497418469999999" blue="0.1769956798" alpha="0.67481844189999995" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="PLl-wA-nau"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iz9-Wy-pcx">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رسید پرداخت" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nf-Aw-Jdj">
+                                    <rect key="frame" x="104" y="8" width="80" height="24"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.24863627552986145" green="0.31270945072174072" blue="0.38824307918548584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="RMc-rR-brF"/>
+                                <constraint firstItem="3Nf-Aw-Jdj" firstAttribute="centerX" secondItem="iz9-Wy-pcx" secondAttribute="centerX" id="ara-tn-5Nd"/>
+                                <constraint firstItem="3Nf-Aw-Jdj" firstAttribute="centerY" secondItem="iz9-Wy-pcx" secondAttribute="centerY" id="nJM-fZ-Cd9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zke-0D-B5B">
+                            <rect key="frame" x="0.0" y="40" width="288" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cash" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-55-W67">
+                                    <rect key="frame" x="119" y="10" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1P1-YI-pe1"/>
+                                        <constraint firstAttribute="width" constant="50" id="ymq-u7-qXi"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.31868138909339905" green="0.64107561111450195" blue="0.41956567764282227" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="Bn0-55-W67" firstAttribute="centerY" secondItem="Zke-0D-B5B" secondAttribute="centerY" id="02A-Kt-1Je"/>
+                                <constraint firstAttribute="height" constant="70" id="8al-L7-bPK"/>
+                                <constraint firstItem="Bn0-55-W67" firstAttribute="centerX" secondItem="Zke-0D-B5B" secondAttribute="centerX" id="Bjv-h6-kmw"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هزینه سفر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0d-ZV-huR">
+                            <rect key="frame" x="114" y="126" width="60" height="24"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مبلغ به تومان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvo-YY-A7R">
+                            <rect key="frame" x="104.5" y="166" width="79" height="24"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="روش پرداخت :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgn-QZ-cob">
+                            <rect key="frame" x="184" y="220" width="88" height="24"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع پرداخت" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvg-Se-5Oo">
+                            <rect key="frame" x="103" y="220" width="73" height="24"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <color key="textColor" red="0.82585816059999995" green="0.23638229359999999" blue="0.22618639900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متن توضیحات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-Gj-daU">
+                            <rect key="frame" x="16" y="260" width="256" height="19.5"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Light" family="IRANSansMobile(FaNum)" pointSize="12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EGx-Gj-daU" secondAttribute="trailing" constant="16" id="0JB-gC-O3K"/>
+                        <constraint firstItem="Zke-0D-B5B" firstAttribute="top" secondItem="iz9-Wy-pcx" secondAttribute="bottom" id="1MV-Yh-3pQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Zke-0D-B5B" secondAttribute="trailing" id="1Z2-1p-G6Q"/>
+                        <constraint firstAttribute="trailing" secondItem="iz9-Wy-pcx" secondAttribute="trailing" id="41H-wK-1jF"/>
+                        <constraint firstItem="EGx-Gj-daU" firstAttribute="top" secondItem="kgn-QZ-cob" secondAttribute="bottom" constant="16" id="5dA-6d-KIK"/>
+                        <constraint firstItem="e0d-ZV-huR" firstAttribute="top" secondItem="Zke-0D-B5B" secondAttribute="bottom" constant="16" id="8ZZ-Vs-cvz"/>
+                        <constraint firstItem="EGx-Gj-daU" firstAttribute="leading" secondItem="KkV-FL-ILR" secondAttribute="leading" constant="16" id="DhT-gi-Pq5"/>
+                        <constraint firstItem="cfi-Q6-JbS" firstAttribute="leading" secondItem="KkV-FL-ILR" secondAttribute="leading" id="JCm-BR-HyT"/>
+                        <constraint firstAttribute="bottom" secondItem="cfi-Q6-JbS" secondAttribute="bottom" id="V0l-3s-RuE"/>
+                        <constraint firstItem="qvg-Se-5Oo" firstAttribute="centerY" secondItem="kgn-QZ-cob" secondAttribute="centerY" id="ax7-CG-f0n"/>
+                        <constraint firstItem="Zke-0D-B5B" firstAttribute="leading" secondItem="KkV-FL-ILR" secondAttribute="leading" id="gsz-r0-GJ3"/>
+                        <constraint firstAttribute="height" constant="380" id="hi4-Sa-bTJ"/>
+                        <constraint firstItem="kgn-QZ-cob" firstAttribute="top" secondItem="Fvo-YY-A7R" secondAttribute="bottom" constant="30" id="hsa-Ua-e25"/>
+                        <constraint firstItem="Fvo-YY-A7R" firstAttribute="centerX" secondItem="e0d-ZV-huR" secondAttribute="centerX" id="iaO-qk-eER"/>
+                        <constraint firstItem="iz9-Wy-pcx" firstAttribute="top" secondItem="KkV-FL-ILR" secondAttribute="top" id="nMq-OS-2ke"/>
+                        <constraint firstItem="e0d-ZV-huR" firstAttribute="centerX" secondItem="KkV-FL-ILR" secondAttribute="centerX" id="qU7-0d-99K"/>
+                        <constraint firstAttribute="trailing" secondItem="cfi-Q6-JbS" secondAttribute="trailing" id="tZ7-9h-fQ7"/>
+                        <constraint firstItem="kgn-QZ-cob" firstAttribute="leading" secondItem="qvg-Se-5Oo" secondAttribute="trailing" constant="8" id="tvw-no-Sib"/>
+                        <constraint firstItem="iz9-Wy-pcx" firstAttribute="leading" secondItem="KkV-FL-ILR" secondAttribute="leading" id="uQx-KP-FRK"/>
+                        <constraint firstItem="Fvo-YY-A7R" firstAttribute="top" secondItem="e0d-ZV-huR" secondAttribute="bottom" constant="16" id="wUb-Mo-c5t"/>
+                        <constraint firstAttribute="trailing" secondItem="kgn-QZ-cob" secondAttribute="trailing" constant="16" id="ylP-Ma-uyv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zCv-rV-QRs" secondAttribute="bottom" id="0Dh-9T-axH"/>
+                <constraint firstItem="KkV-FL-ILR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3Op-wU-xDa"/>
+                <constraint firstItem="zCv-rV-QRs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hp8-oX-jNG"/>
+                <constraint firstItem="zCv-rV-QRs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LMQ-h0-wVo"/>
+                <constraint firstItem="zCv-rV-QRs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Q7T-UR-7PZ"/>
+                <constraint firstItem="KkV-FL-ILR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VPh-0O-UGa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KkV-FL-ILR" secondAttribute="trailing" constant="16" id="cCM-qQ-5he"/>
+                <constraint firstItem="KkV-FL-ILR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mZk-hy-HWA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52.5" y="39.08450704225352"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cash" width="366" height="296"/>
+    </resources>
+</document>

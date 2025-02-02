@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+        <array key="isanslight.ttf">
+            <string>IRANSansMobileFaNum-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateViewController" customModule="Bisim_App" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="WYA-jh-e8R" id="ncy-S7-efM"/>
+                <outlet property="downloadButton" destination="Isa-AB-sCx" id="NKP-Df-KRO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYA-jh-e8R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NH-Tb-uuv" customClass="RoundedView" customModule="Bisim_App" customModuleProvider="target">
+                    <rect key="frame" x="16" y="216" width="343" height="380"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T2I-2q-yVj">
+                            <rect key="frame" x="0.0" y="330" width="343" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isa-AB-sCx" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="GUR-f8-FyA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                                    <state key="normal" title="دانلود از سیب اپ">
+                                        <color key="titleColor" red="0.2014788985" green="0.2618306279" blue="0.32941883799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="dTe-rY-Vly"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نسخه جدیدی از برنامه موجود است، لطفا برای استفاده از ویژهگی های جدید برنامه را به روز رسانی کنید." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeT-f8-BaX">
+                            <rect key="frame" x="16" y="209.66666666666669" width="311" height="81"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Light" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="T2I-2q-yVj" firstAttribute="leading" secondItem="9NH-Tb-uuv" secondAttribute="leading" id="0Ro-Mg-NHm"/>
+                        <constraint firstAttribute="trailing" secondItem="T2I-2q-yVj" secondAttribute="trailing" id="IAP-y8-dnb"/>
+                        <constraint firstAttribute="bottom" secondItem="T2I-2q-yVj" secondAttribute="bottom" id="Mmr-LI-pgk"/>
+                        <constraint firstAttribute="height" constant="380" id="UJj-8S-gP8"/>
+                        <constraint firstAttribute="trailing" secondItem="HeT-f8-BaX" secondAttribute="trailing" constant="16" id="Zhk-An-ESf"/>
+                        <constraint firstItem="HeT-f8-BaX" firstAttribute="leading" secondItem="9NH-Tb-uuv" secondAttribute="leading" constant="16" id="fNa-s0-c6C"/>
+                        <constraint firstItem="HeT-f8-BaX" firstAttribute="centerY" secondItem="9NH-Tb-uuv" secondAttribute="centerY" constant="60" id="puB-Id-tcb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نسخـه جدید" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDu-qY-Kaw">
+                    <rect key="frame" x="139.33333333333334" y="391" width="96.333333333333343" height="30.333333333333314"/>
+                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y73-Mm-3au">
+                    <rect key="frame" x="127.66666666666669" y="305" width="120" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="a8A-3n-hlf"/>
+                        <constraint firstAttribute="width" constant="120" id="udu-Bk-aeR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WYA-jh-e8R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6eE-Jv-Fnu"/>
+                <constraint firstItem="WYA-jh-e8R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Efg-R0-8Sm"/>
+                <constraint firstItem="mDu-qY-Kaw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Eyk-N2-iwx"/>
+                <constraint firstItem="Y73-Mm-3au" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KMn-eb-ex6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9NH-Tb-uuv" secondAttribute="trailing" constant="16" id="MC1-Gj-C0X"/>
+                <constraint firstAttribute="bottom" secondItem="WYA-jh-e8R" secondAttribute="bottom" id="S7A-Op-0t8"/>
+                <constraint firstItem="WYA-jh-e8R" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dWX-Q4-Xdi"/>
+                <constraint firstItem="9NH-Tb-uuv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dlU-qi-Frx"/>
+                <constraint firstItem="9NH-Tb-uuv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qQ0-MP-NvM"/>
+                <constraint firstItem="mDu-qY-Kaw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="s9u-Bd-CjT"/>
+                <constraint firstItem="mDu-qY-Kaw" firstAttribute="top" secondItem="Y73-Mm-3au" secondAttribute="bottom" constant="16" id="uSS-qW-8uk"/>
+                <constraint firstItem="9NH-Tb-uuv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wSD-me-byl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140" y="154.43349753694582"/>
+        </view>
+    </objects>
+</document>

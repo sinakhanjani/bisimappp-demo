@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+        <array key="isanslight.ttf">
+            <string>IRANSansMobileFaNum-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AngryViewController" customModule="Bisim_App" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="jQy-Jd-iPQ" id="VnO-tR-n6l"/>
+                <outlet property="descriptionTextField" destination="ZMM-MK-dVr" id="Wm2-YD-9RW"/>
+                <outlet property="problemButton" destination="Fp7-Qh-tJ9" id="WJn-bl-1Zu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQy-Jd-iPQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBL-jr-uf3" customClass="RoundedView" customModule="Bisim_App" customModuleProvider="target">
+                    <rect key="frame" x="16" y="89" width="288" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع مشکل :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRb-hM-VRE">
+                            <rect key="frame" x="196.5" y="16" width="75.5" height="25.5"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp7-Qh-tJ9" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                            <rect key="frame" x="16" y="57.5" width="256" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8Wl-Sq-1ej"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="  مشکل خود را انتخاب کنید ...">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="problemButtonPressed:" destination="-1" eventType="touchUpInside" id="02X-EI-IDG"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="لطفا شرح مشکل را بنویسید ..." textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZMM-MK-dVr">
+                            <rect key="frame" x="16" y="113.5" width="256" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dns-ti-IKw"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Light" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-OA-tLF">
+                            <rect key="frame" x="0.0" y="210" width="288" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-Bt-oEx" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="144" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="lEz-kt-dPt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="16"/>
+                                    <state key="normal" title="بیخیال">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="Fhx-Q8-WTB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-y3-pn6" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                                    <rect key="frame" x="144" y="0.0" width="144" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="WzS-mA-McV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="16"/>
+                                    <state key="normal" title="ارسال">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="agreeButtonPressed:" destination="-1" eventType="touchUpInside" id="Lgw-Qc-oDS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="TeA-Oe-qCc"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="4hs-ZA-wPz"/>
+                        <constraint firstAttribute="bottom" secondItem="fFN-OA-tLF" secondAttribute="bottom" id="7HQ-Xp-tU5"/>
+                        <constraint firstAttribute="trailing" secondItem="Fp7-Qh-tJ9" secondAttribute="trailing" constant="16" id="9Al-du-Eyx"/>
+                        <constraint firstItem="GRb-hM-VRE" firstAttribute="top" secondItem="hBL-jr-uf3" secondAttribute="top" constant="16" id="DS3-XI-KT7"/>
+                        <constraint firstAttribute="trailing" secondItem="GRb-hM-VRE" secondAttribute="trailing" constant="16" id="K2X-ej-8Ky"/>
+                        <constraint firstAttribute="trailing" secondItem="fFN-OA-tLF" secondAttribute="trailing" id="N6M-gA-u73"/>
+                        <constraint firstItem="Fp7-Qh-tJ9" firstAttribute="top" secondItem="GRb-hM-VRE" secondAttribute="bottom" constant="16" id="Uff-Ns-c1a"/>
+                        <constraint firstAttribute="trailing" secondItem="ZMM-MK-dVr" secondAttribute="trailing" constant="16" id="avr-2x-IWu"/>
+                        <constraint firstItem="Fp7-Qh-tJ9" firstAttribute="leading" secondItem="hBL-jr-uf3" secondAttribute="leading" constant="16" id="gHe-Yp-xdU"/>
+                        <constraint firstItem="ZMM-MK-dVr" firstAttribute="leading" secondItem="hBL-jr-uf3" secondAttribute="leading" constant="16" id="qvX-5T-7Vd"/>
+                        <constraint firstItem="ZMM-MK-dVr" firstAttribute="top" secondItem="Fp7-Qh-tJ9" secondAttribute="bottom" constant="16" id="uw8-a7-qLd"/>
+                        <constraint firstItem="fFN-OA-tLF" firstAttribute="leading" secondItem="hBL-jr-uf3" secondAttribute="leading" id="xot-XU-3TS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jQy-Jd-iPQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4sA-l7-k1l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hBL-jr-uf3" secondAttribute="trailing" constant="16" id="DxT-6b-vee"/>
+                <constraint firstItem="jQy-Jd-iPQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nkb-vG-5bX"/>
+                <constraint firstItem="hBL-jr-uf3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XXQ-Ca-q7d"/>
+                <constraint firstItem="jQy-Jd-iPQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cDH-k8-xsV"/>
+                <constraint firstAttribute="bottom" secondItem="jQy-Jd-iPQ" secondAttribute="bottom" id="hXY-nK-JIC"/>
+                <constraint firstItem="hBL-jr-uf3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-70" id="odO-Kc-SS9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+</document>

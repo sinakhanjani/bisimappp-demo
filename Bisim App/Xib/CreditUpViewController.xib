@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+        <array key="isanslight.ttf">
+            <string>IRANSansMobileFaNum-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditUpViewController" customModule="Bisim_App" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="4cP-zN-2ru" id="pyA-aM-U2a"/>
+                <outlet property="priceLabel" destination="IdU-5A-qx3" id="c3x-R3-b7a"/>
+                <outlet property="priceTextField" destination="Sgw-mm-teV" id="fZU-df-Jk2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cP-zN-2ru">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="976-L0-a59">
+                    <rect key="frame" x="16" y="74" width="288" height="380"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGb-TP-XQH">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="افزایش اعتبـار" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-0E-l4c">
+                                    <rect key="frame" x="103" y="13" width="82" height="24"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.31868138909999999" green="0.6410756111" blue="0.41956567760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="4SB-0E-l4c" firstAttribute="centerY" secondItem="TGb-TP-XQH" secondAttribute="centerY" id="KQ2-CM-gao"/>
+                                <constraint firstAttribute="height" constant="50" id="ULG-hJ-s4V"/>
+                                <constraint firstItem="4SB-0E-l4c" firstAttribute="centerX" secondItem="TGb-TP-XQH" secondAttribute="centerX" id="Y3e-e4-PA5"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pxl-kx-cbA">
+                            <rect key="frame" x="71" y="82" width="146.5" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تومان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVr-qY-O3b">
+                                    <rect key="frame" x="0.0" y="0.0" width="34" height="24"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                    <color key="textColor" red="0.31868138909999999" green="0.6410756111" blue="0.41956567760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdU-5A-qx3">
+                                    <rect key="frame" x="44" y="0.0" width="6.5" height="24"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                    <color key="textColor" red="0.31868138909999999" green="0.6410756111" blue="0.41956567760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اعتبـار موجود :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKj-ko-K5A">
+                                    <rect key="frame" x="60.5" y="0.0" width="86" height="24"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="مبلغ افزایش ( تومان )" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-mm-teV">
+                            <rect key="frame" x="16" y="122" width="256" height="40"/>
+                            <color key="backgroundColor" red="0.93773674959999997" green="0.92865139249999995" blue="0.99215823410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Syc-zm-BX3"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Light" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="csJ-r8-CGa">
+                            <rect key="frame" x="0.0" y="340" width="288" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E30-XX-9GQ" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="144" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Q91-Bo-lN5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                                    <state key="normal" title="پرداخت">
+                                        <color key="titleColor" red="0.31868138909999999" green="0.6410756111" blue="0.41956567760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="payButtonPressed:" destination="-1" eventType="touchUpInside" id="03e-hS-ecN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z21-jr-9Io" customClass="RoundedButton" customModule="Bisim_App" customModuleProvider="target">
+                                    <rect key="frame" x="144" y="0.0" width="144" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="O7I-YL-IbA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                                    <state key="normal" title="بستن">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="rzq-Nk-tPX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="aH6-lh-RYe"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Pxl-kx-cbA" firstAttribute="top" secondItem="TGb-TP-XQH" secondAttribute="bottom" constant="32" id="0bR-3i-J2p"/>
+                        <constraint firstAttribute="height" constant="380" id="3AP-kr-2jk"/>
+                        <constraint firstAttribute="trailing" secondItem="csJ-r8-CGa" secondAttribute="trailing" id="6ja-gy-rI3"/>
+                        <constraint firstAttribute="trailing" secondItem="TGb-TP-XQH" secondAttribute="trailing" id="7l1-ZJ-tzm"/>
+                        <constraint firstItem="Pxl-kx-cbA" firstAttribute="centerX" secondItem="976-L0-a59" secondAttribute="centerX" id="KVT-fy-Le8"/>
+                        <constraint firstItem="TGb-TP-XQH" firstAttribute="top" secondItem="976-L0-a59" secondAttribute="top" id="YLc-DA-3Qn"/>
+                        <constraint firstAttribute="bottom" secondItem="csJ-r8-CGa" secondAttribute="bottom" id="Znb-GT-CNr"/>
+                        <constraint firstItem="Sgw-mm-teV" firstAttribute="top" secondItem="Pxl-kx-cbA" secondAttribute="bottom" constant="16" id="bb6-Rk-3BC"/>
+                        <constraint firstAttribute="trailing" secondItem="Sgw-mm-teV" secondAttribute="trailing" constant="16" id="hJo-S9-NRS"/>
+                        <constraint firstItem="csJ-r8-CGa" firstAttribute="leading" secondItem="976-L0-a59" secondAttribute="leading" id="sgx-MN-bHw"/>
+                        <constraint firstItem="Sgw-mm-teV" firstAttribute="leading" secondItem="976-L0-a59" secondAttribute="leading" constant="16" id="vqb-pg-wWE"/>
+                        <constraint firstItem="TGb-TP-XQH" firstAttribute="leading" secondItem="976-L0-a59" secondAttribute="leading" id="wJP-Ce-YCQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="976-L0-a59" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="022-pr-LcP"/>
+                <constraint firstItem="4cP-zN-2ru" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6oS-ZI-80A"/>
+                <constraint firstItem="976-L0-a59" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="DEm-x5-mq3"/>
+                <constraint firstAttribute="bottom" secondItem="4cP-zN-2ru" secondAttribute="bottom" id="WqP-XE-Nq3"/>
+                <constraint firstItem="4cP-zN-2ru" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f4s-Q0-xtj"/>
+                <constraint firstItem="4cP-zN-2ru" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iRa-AU-X4L"/>
+                <constraint firstItem="976-L0-a59" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="kPC-hv-Dze"/>
+                <constraint firstAttribute="trailing" secondItem="976-L0-a59" secondAttribute="trailing" constant="16" id="qtF-vg-33X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.875" y="144.71830985915494"/>
+        </view>
+    </objects>
+</document>
