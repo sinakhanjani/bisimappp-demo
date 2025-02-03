@@ -26,6 +26,8 @@ Bisim App provides essential ride-hailing features found in similar applications
 - **🛣️ Route Selection** – Users can choose a secondary route or return trip.
 - **🎟️ Discount Codes** – The app supports promo codes for discounts.
 - **📊 Trip Reports** – Passengers and drivers can view ride history and details.
+- **🛤️ Multiple Destination Selection** – Passengers can set **two destinations** on the map, choosing both a primary and secondary stop during the ride.
+- **⏳ Stop Duration Control** – Users can **set a waiting time** at the first destination, and the system automatically calculates the additional cost based on the stop duration.
 
 ## 🛠️ Technologies Used
 - **🖥️ Swift & Xcode** – Developed natively for iOS.
